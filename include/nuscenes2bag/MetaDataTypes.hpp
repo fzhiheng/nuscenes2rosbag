@@ -51,6 +51,27 @@ struct ImuData {
     TimeStamp utime;
 };
 
+struct WheelData {
+    double FL_wheel_speed;
+    double FR_wheel_speed;
+    double RL_wheel_speed;
+    double RR_wheel_speed;
+    int left_solar;
+    double longitudinal_accel;
+    double meanEffTorque;
+    int odom;
+    double odom_speed;
+    double pedal_cc;
+    double regen;
+    double requestedTorqueAfterProc;
+    int right_solar;
+    double steer_corrected;
+    double steer_offset_can;
+    double steer_raw;
+    double transversal_accel;
+    TimeStamp utime;
+};
+
 struct CalibratedSensorName {
     Token token;
     std::string name;

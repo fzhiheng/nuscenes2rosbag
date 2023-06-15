@@ -29,6 +29,8 @@ public:
     const Token& sensorToken) const = 0;
   virtual std::vector<ImuData> getImuData(
     const fs::path& inPath) const = 0;
+  virtual std::vector<WheelData> getWheelData(
+        const fs::path& inPath) const = 0;
 };
 
 }

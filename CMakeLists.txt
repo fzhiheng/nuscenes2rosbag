@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.8) # C++17 support was added in CMake 3.8
 
-project(nuscenes2bag)
+project(nuscenes2rosbag)
 
 #set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD 14)
@@ -56,6 +56,7 @@ set(SRCS
     src/LidarDirectoryConverterXYZIR.cpp
     src/RadarDirectoryConverter.cpp
     src/ImuDirectoryConverter.cpp
+    src/WheelDirectoryConverter.cpp
     src/NuScenes2Bag.cpp
     src/FileProgress.cpp
     src/MetaDataReader.cpp

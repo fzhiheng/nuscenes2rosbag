@@ -17,6 +17,7 @@ class SceneConverter {
 
     private:
     void convertImuDatas(rosbag::Bag& outBag, const fs::path &inPath);
+    void convertWheelDatas(rosbag::Bag& outBag, const fs::path &inPath);
     void convertSampleDatas(rosbag::Bag& outBag, const fs::path &inPath, FileProgress& fileProgress);
     void convertEgoPoseInfos(rosbag::Bag& outBag, const std::vector<CalibratedSensorInfoAndName>& calibratedSensorInfo);
     

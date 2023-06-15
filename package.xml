@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>nuscenes2bag</name>
+  <name>nuscenes2rosbag</name>
   <version>0.0.1</version>
   <description>Convert nuscenes dataset to rosbag</description>
 
