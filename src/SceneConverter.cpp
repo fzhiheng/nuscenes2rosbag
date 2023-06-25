@@ -132,7 +132,7 @@ namespace nuscenes2bag {
         std::cout << "Writing WHEEL msgs" << std::endl;
         for (const auto &wheelData: wheelDatas) {
             auto msg = readWheelFile(wheelData);
-            writeMsg(topicName, "imu", wheelData.utime, outBag, msg);
+            writeMsg(topicName, "wheel", wheelData.utime, outBag, msg);
         }
     }
 
