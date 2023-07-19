@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.8) # C++17 support was added in CMake 3.8
 
-project(nuscenes2rosbag)
+project(nuscenes2bag)
 
 #set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD 14)
